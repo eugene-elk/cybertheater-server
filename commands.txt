@@ -1,0 +1,31 @@
+Avaliable commands/messages:
+    Elsa:
+        /MOVE_TO (X: int, Y: int) # Move OMNI platform.
+        /PLAY_NOTE (NOTE: int, TIME: int), ... # Play note('s) for time.
+        /SET_HEAD DEGREE: int # Rotate head for DEGREE from center
+        /SET_HAND UP_DOWN: bool # Hands up/down
+        /COMPRESSOR ON_OF: bool # Compressor on/off
+        /DEMO # Run demo mode
+        !CHORD_DETECTED number: bool # Chord detected
+        !LOGGING # Remote logging
+    Robert:
+        /ROTATE DEGREE: int # Rotate platform
+        /MOVE DISTANCE: int # Move platform forward/backward
+        /PLAY_NOTE (NOTE: int, TIME: int), ... # Play note('s) for time.
+        /SET_HEAD VERTICAL: int, HORIZONTAL: int # Rotate head / head up for DEGREE from center
+        /SET_EYES DEGREE: int OPEN: bool # Eyes horizontal movement / open and close
+        /DEMO # Run demo mode
+        !GESTURE_DETECTED GESTURE: string # Notify gesture e.g ROCK, OK, THREE 
+        !BACK_SENSOR state: bool # Notify back distance sensor state changed
+        !STABILISING_DISTURB # Someone pushed robot
+        !STABILISING_FAILURE # Help needed :(
+        !LOGGING # Remote logging
+    Seldon:
+        /ROTATE DEGREE: int # Rotate platform
+        /MOVE DISTANCE: int # Move platform forward/backward
+        /PLAY_NOTE (NOTE: int, TIME: int), ... # Play note('s) for time.
+        /HEAD_LIGHT BRIGHTNESS: int # Set eyes LED's to BRIGHTNESS
+        /SET_HAND UP_DOWN: bool # Hands up/down
+        /SAY SPEECH: string # TTS engine
+        !SPEECH_DETECTED SPEECH: string # STT engine
+        !LOGGING # Remote logging
